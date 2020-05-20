@@ -105,7 +105,7 @@ public:
         comboBox->setItemText(3, QCoreApplication::translate("MainWindow", "\347\256\227\346\263\2254", nullptr));
 
         btnApplyAlgorithm->setText(QCoreApplication::translate("MainWindow", "\345\272\224\347\224\250\347\256\227\346\263\225", nullptr));
-        menuOpenCV_handcraft->setTitle(QCoreApplication::translate("MainWindow", "OpenCV-handcraft", nullptr));
+        menuOpenCV_handcraft->setTitle(QCoreApplication::translate("MainWindow", "\347\256\227\346\263\225\346\250\241\345\274\217", nullptr));
     } // retranslateUi
 
 };

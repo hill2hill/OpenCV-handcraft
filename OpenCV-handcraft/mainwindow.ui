@@ -83,6 +83,32 @@
      <string>应用算法</string>
     </property>
    </widget>
+   <widget class="QLabel" name="labOriginPic">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>90</y>
+      <width>131</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>待处理图像</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>90</y>
+      <width>131</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>处理后图像</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -95,7 +121,7 @@
    </property>
    <widget class="QMenu" name="menuOpenCV_handcraft">
     <property name="title">
-     <string>OpenCV-handcraft</string>
+     <string>算法模式</string>
     </property>
     <addaction name="actionsingle_PIC"/>
    </widget>
