@@ -33,8 +33,10 @@ public:
     QWidget *verticalLayoutWidget;
     QVBoxLayout *verticalLayout;
     QLabel *label;
-    QComboBox *comboBox;
+    QComboBox *comBoxAlgorithmIndex;
     QPushButton *btnApplyAlgorithm;
+    QLabel *labOriginPic;
+    QLabel *labModified;
     QMenuBar *menubar;
     QMenu *menuOpenCV_handcraft;
     QStatusBar *statusbar;
@@ -62,18 +64,24 @@ public:
 
         verticalLayout->addWidget(label);
 
-        comboBox = new QComboBox(verticalLayoutWidget);
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->addItem(QString());
-        comboBox->setObjectName(QString::fromUtf8("comboBox"));
+        comBoxAlgorithmIndex = new QComboBox(verticalLayoutWidget);
+        comBoxAlgorithmIndex->addItem(QString());
+        comBoxAlgorithmIndex->addItem(QString());
+        comBoxAlgorithmIndex->addItem(QString());
+        comBoxAlgorithmIndex->addItem(QString());
+        comBoxAlgorithmIndex->setObjectName(QString::fromUtf8("comBoxAlgorithmIndex"));
 
-        verticalLayout->addWidget(comboBox);
+        verticalLayout->addWidget(comBoxAlgorithmIndex);
 
         btnApplyAlgorithm = new QPushButton(centralwidget);
         btnApplyAlgorithm->setObjectName(QString::fromUtf8("btnApplyAlgorithm"));
         btnApplyAlgorithm->setGeometry(QRect(400, 10, 75, 23));
+        labOriginPic = new QLabel(centralwidget);
+        labOriginPic->setObjectName(QString::fromUtf8("labOriginPic"));
+        labOriginPic->setGeometry(QRect(50, 90, 131, 131));
+        labModified = new QLabel(centralwidget);
+        labModified->setObjectName(QString::fromUtf8("labModified"));
+        labModified->setGeometry(QRect(330, 90, 131, 131));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -99,12 +107,14 @@ public:
         actionsingle_PIC->setText(QCoreApplication::translate("MainWindow", "single PIC", nullptr));
         btnSelectPic->setText(QCoreApplication::translate("MainWindow", "\351\200\211\346\213\251\345\233\276\347\211\207", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p align=\"center\">Select Algorithm</p></body></html>", nullptr));
-        comboBox->setItemText(0, QCoreApplication::translate("MainWindow", "\347\256\227\346\263\2251", nullptr));
-        comboBox->setItemText(1, QCoreApplication::translate("MainWindow", "\347\256\227\346\263\2252", nullptr));
-        comboBox->setItemText(2, QCoreApplication::translate("MainWindow", "\347\256\227\346\263\2253", nullptr));
-        comboBox->setItemText(3, QCoreApplication::translate("MainWindow", "\347\256\227\346\263\2254", nullptr));
+        comBoxAlgorithmIndex->setItemText(0, QCoreApplication::translate("MainWindow", "\347\256\227\346\263\2251", nullptr));
+        comBoxAlgorithmIndex->setItemText(1, QCoreApplication::translate("MainWindow", "\347\256\227\346\263\2252", nullptr));
+        comBoxAlgorithmIndex->setItemText(2, QCoreApplication::translate("MainWindow", "\347\256\227\346\263\2253", nullptr));
+        comBoxAlgorithmIndex->setItemText(3, QCoreApplication::translate("MainWindow", "test_\345\244\215\345\210\266\345\216\237\345\233\276", nullptr));
 
         btnApplyAlgorithm->setText(QCoreApplication::translate("MainWindow", "\345\272\224\347\224\250\347\256\227\346\263\225", nullptr));
+        labOriginPic->setText(QCoreApplication::translate("MainWindow", "\345\276\205\345\244\204\347\220\206\345\233\276\345\203\217", nullptr));
+        labModified->setText(QCoreApplication::translate("MainWindow", "\345\244\204\347\220\206\345\220\216\345\233\276\345\203\217", nullptr));
         menuOpenCV_handcraft->setTitle(QCoreApplication::translate("MainWindow", "\347\256\227\346\263\225\346\250\241\345\274\217", nullptr));
     } // retranslateUi
 

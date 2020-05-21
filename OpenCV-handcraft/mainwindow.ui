@@ -45,7 +45,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QComboBox" name="comboBox">
+      <widget class="QComboBox" name="comBoxAlgorithmIndex">
        <item>
         <property name="text">
          <string>算法1</string>
@@ -63,7 +63,7 @@
        </item>
        <item>
         <property name="text">
-         <string>算法4</string>
+         <string>test_复制原图</string>
         </property>
        </item>
       </widget>
@@ -96,7 +96,7 @@
      <string>待处理图像</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="labModified">
     <property name="geometry">
      <rect>
       <x>330</x>
