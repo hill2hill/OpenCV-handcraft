@@ -36,8 +36,13 @@ void MainWindow::on_btnSelectPic_clicked()
     }
     else
     {
+        //创建适合I/O的QImage格式
+        originImage.load(picName);
+        modifiedImage.load(picName);
+
         //通过picName路径创建pPixmap
         pPixmap = new QPixmap(picName);
+        pPixmapAfter = new QPixmap(picName);
 
         //根据显示框大小显示图像 并保持原有的图像比例
         int width = ui->labOriginPic->width(), height = ui->labOriginPic->height();
@@ -55,7 +60,9 @@ void MainWindow::on_btnApplyAlgorithm_clicked()
     algorithmIndex = ui->comBoxAlgorithmIndex->currentIndex();
     switch(algorithmIndex)
     {
-        case(3): testCopyOrigin(ui, pPixmap, pPixmapAfter);
+        case(0): testCopyOrigin(ui, pPixmap, pPixmapAfter); break;
+
+        default: break;
     }
 
 }

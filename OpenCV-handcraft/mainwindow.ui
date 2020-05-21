@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>537</width>
-    <height>326</height>
+    <width>551</width>
+    <height>396</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="QPushButton" name="btnSelectPic">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>10</y>
+      <x>50</x>
+      <y>20</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -48,22 +48,22 @@
       <widget class="QComboBox" name="comBoxAlgorithmIndex">
        <item>
         <property name="text">
-         <string>算法1</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>算法2</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>算法3</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
          <string>test_复制原图</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>最近邻内插法</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>双线性内插法</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>双三次内插法</string>
         </property>
        </item>
       </widget>
@@ -73,8 +73,8 @@
    <widget class="QPushButton" name="btnApplyAlgorithm">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>10</y>
+      <x>410</x>
+      <y>20</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -83,30 +83,56 @@
      <string>应用算法</string>
     </property>
    </widget>
-   <widget class="QLabel" name="labOriginPic">
+   <widget class="QPushButton" name="btnSave">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>90</y>
-      <width>131</width>
-      <height>131</height>
+      <x>420</x>
+      <y>310</y>
+      <width>75</width>
+      <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>待处理图像</string>
+     <string>保存新图片</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labOriginPic">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>201</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;待处理图像&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="labModified">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>90</y>
-      <width>131</width>
-      <height>131</height>
+      <x>310</x>
+      <y>80</y>
+      <width>201</width>
+      <height>201</height>
      </rect>
     </property>
     <property name="text">
-     <string>处理后图像</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;处理后图像&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>100</y>
+      <width>16</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
     </property>
    </widget>
   </widget>
@@ -115,7 +141,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>537</width>
+     <width>551</width>
      <height>23</height>
     </rect>
    </property>

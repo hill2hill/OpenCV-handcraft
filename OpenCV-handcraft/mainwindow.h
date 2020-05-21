@@ -23,8 +23,10 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QString picName; //原始图像路径
-    QPixmap *pPixmap; //待处理图像
-    QPixmap *pPixmapAfter; //处理后图像
+    QPixmap *pPixmap; //待处理图像 QPixmap
+    QImage originImage; //待处理图像 QImage
+    QPixmap *pPixmapAfter; //处理后图像 QPixmap
+    QImage modifiedImage; //处理后图像 QImage
     int picWidth, picHeight; //图像长宽
     int algorithmIndex; //被选择算法的索引
 };
